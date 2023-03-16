@@ -1,0 +1,36 @@
+@import "../../styles/variables.scss";
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+.nav {
+	width: 35%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+
+	&__div-buttons {
+		display: flex;
+		justify-content: space-between;
+		width: 30%;
+		height: 100%;
+	}
+
+	&___buttons {
+		width: 100%;
+		height: 100%;
+		background-color: transparent;
+		color: white;
+		border: none;
+		font-family: $font;
+		font-size: 25px;
+	}
+
+	&__div-buttons:hover {
+		border-bottom: 1px solid;
+		transform: scale(1.7);
+	}
+}
