@@ -1,11 +1,11 @@
 import "./App.css";
-import { Navbar } from "./components/Navbar";
+import { HomeMenu } from "./components/HomeMenu";
 
 function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<Navbar />
+				<HomeMenu />
 			</header>
 		</div>
 	);
