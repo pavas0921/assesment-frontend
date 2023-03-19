@@ -6,15 +6,12 @@
 }
 
 .nav {
+	margin-top: 40px;
 	width: 35%;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	height: 50px;
 
 	&__div-buttons {
-		display: flex;
-		justify-content: space-between;
 		width: 30%;
 		height: 100%;
 	}
@@ -26,11 +23,11 @@
 		color: white;
 		border: none;
 		font-family: $font;
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	&__div-buttons:hover {
 		border-bottom: 1px solid;
-		transform: scale(1.7);
+		transform: scale(1.3);
 	}
 }
