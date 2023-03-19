@@ -5,29 +5,36 @@
 	box-sizing: border-box;
 }
 
-.nav {
-	margin-top: 20px;
-	margin-right: 100px;
-	width: 10%;
+.main {
+	min-height: 100vh;
 	display: flex;
-	height: 50px;
+	justify-content: center;
+	color: $fontColor;
 
-	&__div-buttons {
+	&__nav {
+		margin-top: 20px;
+		margin-right: 100px;
+		width: 10%;
+		display: flex;
+		height: 50px;
+	}
+
+	&___div-buttons {
 		width: 50%;
 		height: 100%;
 	}
 
-	&___buttons {
+	&____buttons {
 		width: 100%;
 		height: 100%;
 		background-color: transparent;
-		color: white;
+		color: $fontColor;
 		border: none;
 		font-family: $font;
 		font-size: 20px;
 	}
 
-	&__div-buttons:hover {
+	&____buttons:hover {
 		border-bottom: 1px solid;
 		transform: scale(1.3);
 	}

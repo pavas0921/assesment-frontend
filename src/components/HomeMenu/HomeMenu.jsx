@@ -1,15 +1,28 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import "./home_menu.scss";
 
 const HomeMenu = () => {
-	return (
-		<div className="nav">
-			<div className="nav__div-buttons">
-				<button className="nav___buttons">Home</button>
-			</div>
+	const navigate = useNavigate();
 
-			<div className="nav__div-buttons">
-				<button className="nav___buttons">About</button>
+	const goToAbout = () => {
+		navigate("/about");
+	};
+
+	const goToHome = () => {
+		navigate("/");
+	};
+
+	return (
+		<div className="main">
+			<div className="main__nav">
+				<button onClick={goToHome} className="main____buttons">
+					Home
+				</button>
+
+				<button onClick={goToAbout} className="main____buttons">
+					About
+				</button>
 			</div>
 		</div>
 	);

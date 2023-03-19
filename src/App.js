@@ -1,12 +1,10 @@
 import "./App.css";
-import { HomeMenu } from "./components/HomeMenu";
+import { CustomRouter } from "./router";
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<HomeMenu />
-			</header>
+			<CustomRouter />
 		</div>
 	);
 }
