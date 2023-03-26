@@ -20,5 +20,9 @@ module.exports = {
 		sourceType: "module",
 	},
 	plugins: ["react"],
-	rules: { "react/jsx-uses-react": "error", "react/jsx-uses-vars": "error" },
+	rules: {
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "error",
+		"react/prop-types": "off",
+	},
 };
