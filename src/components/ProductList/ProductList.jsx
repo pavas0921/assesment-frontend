@@ -1,20 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { getAllProducts } from "../../services/productsAPI";
+import { Context } from "../../context";
 import "./product_list.scss";
 
-const ProducList = () => {
-	const [products, setProducts] = useState([]);
+const ProducList = (props) => {
+	const [data, setData] = useState([]);
+	const context = useContext(Context);
 
 	useEffect(() => {
 		const getData = async () => {
-			const data = await getAllProducts();
-			setProducts(data);
+			// const products = await getAllProducts();
+			setData(await getAllProducts());
+			context.data.products = data;
 		};
-
 		getData();
 	}, []);
-	console.log(products);
-	return <div>products</div>;
+
+	return <div>Hola</div>;
 };
 
 export default ProducList;
