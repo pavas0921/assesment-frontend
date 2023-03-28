@@ -1,0 +1,75 @@
+@import "../../styles/variables.scss";
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+.main_portfolio {
+	margin-top: 10px;
+	width: 100%;
+	height: 640px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	&__name_img {
+		width: 20%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin-left: 20px;
+	}
+
+	&___img {
+		display: flex;
+		padding-bottom: 20px;
+	}
+
+	&___name {
+		font-size: 30px;
+		font-weight: bold;
+		font-family: $font;
+		color: $fontColor;
+	}
+
+	&__description {
+		width: 70%;
+		margin-top: 80px;
+		margin-left: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&___titile-description {
+		font-family: $font;
+		color: $fontColor;
+	}
+
+	&___aboutme {
+		margin-top: 20px;
+		font-family: $font;
+		color: $fontColor;
+		margin-bottom: 40px;
+	}
+
+	&__technologies {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
+	&____img-tech {
+		width: 40%;
+	}
+
+	&____img-tech:hover {
+		transform: scale(1.2);
+	}
+}
