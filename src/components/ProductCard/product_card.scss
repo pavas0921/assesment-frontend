@@ -1,0 +1,17 @@
+.product {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border: 1px solid white;
+	margin: 10px;
+	border-radius: 20px;
+
+	&__img {
+		width: 80%;
+		margin: 10px;
+		border-radius: 20px;
+	}
+}
