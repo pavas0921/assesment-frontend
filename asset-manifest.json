@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/assesment-frontend/static/css/main.860c56f9.css",
+    "main.js": "/assesment-frontend/static/js/main.2d3d853d.js",
+    "static/js/787.84fffe18.chunk.js": "/assesment-frontend/static/js/787.84fffe18.chunk.js",
+    "static/media/andres.jpeg": "/assesment-frontend/static/media/andres.37fef349808f72dc179f.jpeg",
+    "static/media/react.png": "/assesment-frontend/static/media/react.333579177c55ff03e287.png",
+    "static/media/github.png": "/assesment-frontend/static/media/github.f663596226052a2b01e2.png",
+    "static/media/redux.png": "/assesment-frontend/static/media/redux.bc9d9b73e77e224b547e.png",
+    "static/media/git.png": "/assesment-frontend/static/media/git.0df8574ec9f014a1f65e.png",
+    "index.html": "/assesment-frontend/index.html",
+    "main.860c56f9.css.map": "/assesment-frontend/static/css/main.860c56f9.css.map",
+    "main.2d3d853d.js.map": "/assesment-frontend/static/js/main.2d3d853d.js.map",
+    "787.84fffe18.chunk.js.map": "/assesment-frontend/static/js/787.84fffe18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.860c56f9.css",
+    "static/js/main.2d3d853d.js"
+  ]
+}
