@@ -15,7 +15,9 @@ const Portfolio = (props) => {
 					<Image />
 				</div>
 				<div className="main_portfolio___name">
-					<p>{props.name}</p>
+					<h4>{props.name}</h4>
+					<p>Contact Me!</p>
+					<p>pavas0921@gmail.com</p>
 				</div>
 			</div>
 
@@ -25,13 +27,10 @@ const Portfolio = (props) => {
 				</div>
 				<div className="main_portfolio___aboutme">
 					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
-						reiciendis aliquid possimus, nihil atque quidem repellendus quae
-						assumenda vitae sed magnam, laborum, saepe magni voluptate commodi
-						explicabo quisquam corrupti cupiditate? Lorem ipsum dolor sit, amet
-						consectetur adipisicing elit. Quis error ducimus blanditiis, omnis
-						cum fugiat rem ipsam cumque commodi. Laboriosam quaerat itaque
-						accusantium, iure alias iste ullam voluptatem. Ea, deleniti?
+						Hi, I&#39;m Andres and I consider myself a person passionate about
+						technology. I love learning about new topics related to programming
+						and technology in general and I&#39;m always looking for new
+						challenges and opportunities to grow professionally.
 					</p>
 				</div>
 
