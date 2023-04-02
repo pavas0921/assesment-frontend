@@ -2,7 +2,6 @@
 	"name": "assesment-frontend",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://pavas0921.github.io/assesment-frontend",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
@@ -20,9 +19,7 @@
 		"eject": "react-scripts eject",
 		"format": "prettier --write .",
 		"lint": "eslint .",
-		"lint-fix": "eslint . --fix --ext .js,.jsx",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"lint-fix": "eslint . --fix --ext .js,.jsx"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -53,7 +50,6 @@
 		"eslint-plugin-promise": "^6.1.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
-		"gh-pages": "^5.0.0",
 		"prettier": "^2.8.4",
 		"sass": "^1.59.3"
 	}
