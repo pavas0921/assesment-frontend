@@ -17,7 +17,6 @@ const ProducList = () => {
 			const products = await getAllProducts();
 			setData(products);
 			context.data.products = products;
-			console.log(context);
 			setLoader(false);
 		};
 		getData();
@@ -32,6 +31,7 @@ const ProducList = () => {
 		<div>
 			<div className="products">
 				{loader && <Loader />}
+
 				{data.length >= 1 &&
 					data.map((item, index) => (
 						<ProductCard

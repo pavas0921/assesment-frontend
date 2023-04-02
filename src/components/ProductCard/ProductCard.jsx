@@ -1,9 +1,14 @@
 import React from "react";
 import "./product_card.scss";
+import { UseCountdown } from "../../hooks";
 
 const ProductCard = ({ id, title, images, price, handleClick }) => {
+	const { hours, minutes, seconds, isFinished } = UseCountdown();
+
 	const redirect = () => {
-		handleClick(id);
+		if (!isFinished) {
+			handleClick(id);
+		}
 	};
 
 	return (
@@ -13,6 +18,9 @@ const ProductCard = ({ id, title, images, price, handleClick }) => {
 			</h3>
 			<img className="product__img" src={images} alt={images} />
 			<p>$ {price}</p>
+			<p>
+				{hours}:{minutes}:{seconds}
+			</p>
 		</div>
 	);
 };
