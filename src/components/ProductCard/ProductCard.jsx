@@ -1,10 +1,16 @@
 import React from "react";
 import "./product_card.scss";
 
-const ProductCard = ({ title, images, price }) => {
+const ProductCard = ({ id, title, images, price, handleClick }) => {
+	const redirect = () => {
+		handleClick(id);
+	};
+
 	return (
-		<div className="product">
-			<h3>{title}</h3>
+		<div className="product" onClick={redirect}>
+			<h3>
+				{`${id} `} {title}
+			</h3>
 			<img className="product__img" src={images} alt={images} />
 			<p>$ {price}</p>
 		</div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import { getAllProducts } from "../../services/productsAPI";
 import { Context } from "../../context";
 import { ProductCard } from "../ProductCard";
@@ -9,16 +10,23 @@ const ProducList = () => {
 	const [data, setData] = useState([]);
 	const [loader, setLoader] = useState(true);
 	const context = useContext(Context);
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		const getData = async () => {
-			// const products = await getAllProducts();
-			setData(await getAllProducts());
-			context.data.products = data;
+			const products = await getAllProducts();
+			setData(products);
+			context.data.products = products;
+			console.log(context);
 			setLoader(false);
 		};
 		getData();
 	}, []);
+
+	const goToDetails = (id) => {
+		// Redirect to details
+		navigate(`/product/${id}`);
+	};
 
 	return (
 		<div>
@@ -28,9 +36,11 @@ const ProducList = () => {
 					data.map((item, index) => (
 						<ProductCard
 							key={index}
+							id={item.id}
 							title={item.title}
 							images={item.images}
 							price={item.price}
+							handleClick={goToDetails}
 						/>
 					))}
 			</div>
